@@ -9,7 +9,7 @@ import {
     houseDarkTheme,
     houseLightTheme,
 } from 'react-admin';
-import { softDarkTheme, softLightTheme } from './../layout/themes';
+import { softDarkTheme, softLightTheme } from '../layout/themes';
 
 export type ThemeName = 'soft' | 'default' | 'nano' | 'radiant' | 'house';
 

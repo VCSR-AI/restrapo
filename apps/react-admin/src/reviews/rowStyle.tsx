@@ -4,7 +4,7 @@ import red from '@mui/material/colors/red';
 import { useTheme } from '@mui/material/styles';
 import { Identifier } from 'react-admin';
 
-import { Review } from './../types';
+import { Review } from '../types';
 
 const rowStyle = (selectedRow?: Identifier) => (record: Review) => {
     const theme = useTheme();

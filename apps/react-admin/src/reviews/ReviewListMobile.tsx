@@ -3,7 +3,7 @@ import { List } from '@mui/material';
 import { RecordContextProvider, useListContext } from 'react-admin';
 
 import { ReviewItem } from './ReviewItem';
-import { Review } from './../types';
+import { Review } from '../types';
 
 const ReviewListMobile = () => {
     const { data, error, isPending, total } = useListContext<Review>();
