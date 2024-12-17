@@ -1,0 +1,1 @@
+docker run --rm -it -v ./image:/opt/app node:18-alpine npx --yes create-strapi@latest /opt/app

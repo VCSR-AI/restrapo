@@ -1947,6 +1947,17 @@
     tslib "^2.3.0"
     webpack "5.88.0"
 
+"@nx/node@^20.2.2":
+  version "20.2.2"
+  resolved "https://registry.yarnpkg.com/@nx/node/-/node-20.2.2.tgz#92bd4fa292105fddbdd576ebd674e39b76cc0c2b"
+  integrity sha512-nZGtozEvKccFAjRPlHOe8LgPeBrGi/gHOqig0B16J91dcgZu/2GWp81BiX1TDEz/f2CL1BwvApXAgkztuXuiBA==
+  dependencies:
+    "@nx/devkit" "20.2.2"
+    "@nx/eslint" "20.2.2"
+    "@nx/jest" "20.2.2"
+    "@nx/js" "20.2.2"
+    tslib "^2.3.0"
+
 "@nx/nx-darwin-arm64@20.2.2":
   version "20.2.2"
   resolved "https://registry.yarnpkg.com/@nx/nx-darwin-arm64/-/nx-darwin-arm64-20.2.2.tgz#6a2e7ad5f52a6ae2caf850d2ec93e2b2b430e62e"
