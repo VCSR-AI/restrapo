@@ -7,19 +7,16 @@ ARG NODE_ENV=development
 ENV NODE_ENV=${NODE_ENV}
 
 WORKDIR /opt/
+COPY package.json package-lock.json ./
 RUN npm install -g node-gyp
-
-ENV PATH=/opt/app/node_modules/.bin:$PATH
-
-RUN mkdir -p /opt/app
-WORKDIR /opt/app
-
-COPY . .
-
-RUN chown -R node:node .
 RUN npm config set fetch-retry-maxtimeout 600000 -g && npm install
+ENV PATH=/opt/node_modules/.bin:$PATH
+
+WORKDIR /opt/app
+COPY . .
 RUN npm install
 RUN npm install mysql2
+RUN chown -R node:node .
 
 USER node
 RUN ["npm", "run", "build"]
