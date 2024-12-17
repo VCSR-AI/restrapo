@@ -11,20 +11,6 @@ services:
       - ./image-lts-alpine:/opt/app
     command: npx --yes create-strapi-app@latest /opt/app --quickstart --no-run
 
-  # strapi:
-  #   container_name: build
-  #   build:
-  #     context: ./image
-  #     dockerfile: ../Dockerfile
-  #     args:
-  #       - t=s:latest
-  #   restart: unless-stopped
-  #   ports:
-  #     - "1337:1337"
-  #   networks:
-  #     - strapi
-
-  # This service should be used for to develop the Strapi project
   strapi:
     container_name: strapi
     build:
